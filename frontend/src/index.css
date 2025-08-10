@@ -1,0 +1,27 @@
+/* index.css */
+body {
+    margin: 0;
+
+}
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  background-color: transparent;
+  border-radius: 10px;
+}
+button {
+    display: flex;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #08b4f8;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #0db3ead8;
+}

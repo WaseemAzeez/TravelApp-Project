@@ -1,0 +1,20 @@
+.signup-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.signup-container input,
+.signup-container button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+.signup-container button {
+  background-color: #3bdeec;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,119 @@
+/* Outer header container */
+header {
+  background: #24b4f7d6;
+  color: white;
+  margin: 0;
+}
+
+/* Inner nav layout */
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+/* Branding (left side) */
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.branding img {
+  width: 40px;
+  padding: 0;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Navbar (center) */
+.navbar {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #007bff;
+  text-shadow: 0 0 6px rgba(210, 240, 255, 0.7);
+}
+
+/* Sign section (right side) */
+.sign {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.sign a {
+  text-decoration: none;
+  color: #f1e4e4;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.sign a:hover {
+  color: #007bff;
+}
+
+.sign img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Hamburger icon (hidden on desktop) */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
+  z-index: 1100;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Hide nav and sign section by default */
+  .navbar,
+  .sign {
+    display: none;
+  }
+
+  /* Show hamburger icon */
+  .hamburger {
+    display: block;
+  }
+
+  /* Show nav when hamburger toggled */
+  .navbar.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 10%;
+    background: #24b4f7;
+    padding: 15px 20px;
+    z-index: 1000;
+  }
+}

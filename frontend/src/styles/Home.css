@@ -1,0 +1,39 @@
+/* General home page container */
+
+
+.home-page {
+    max-width: 1200px;
+}
+
+/* Page title */
+.home-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+    }
+
+    .home-page {
+        padding: 30px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-title {
+        font-size: 1.2rem;
+    }
+
+    .home-page {
+        padding: 20px 12px;
+    }
+}
